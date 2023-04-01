@@ -2,13 +2,12 @@
 //
 //     final requestToken = requestTokenFromJson(jsonString);
 
-import 'package:meta/meta.dart';
 
 class RequestToken {
   RequestToken({
-    @required this.success,
-    @required this.expiresAt,
-    @required this.requestToken,
+    required this.success,
+    required this.expiresAt,
+    required this.requestToken,
   });
 
   final bool success;

@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:getx_patron/app/modules/spash_page/spash_binding.dart';
 import 'package:getx_patron/app/modules/spash_page/splash_page.dart';
 import 'package:getx_patron/app/routes/app_pages.dart';
+import 'package:get/get.dart';
+
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
@@ -17,10 +20,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SplashPage(),
+      home: const SplashPage(),
       initialBinding: SplashBinding(),
       getPages: AppPages.pages,
-      initialRoute: "splash",
     );
   }
 }

@@ -11,17 +11,17 @@ class AppPages {
   static final List<GetPage> pages = [
     GetPage(
       name: AppRoutes.SPLASHROUTE,
-      page: () => SplashPage(),
+      page: () => const SplashPage(),
       binding: SplashBinding(),
     ),
     GetPage(
       name: AppRoutes.HOMEROUTE,
-      page: () => HomePage(),
+      page: () => const HomePage(),
       binding: HomeBinding(),
     ),
     GetPage(
       name: AppRoutes.DETAILROUTE,
-      page: () => DetailPage(),
+      page: () => const DetailPage(),
       binding: DetailBindig(),
     )
   ];
